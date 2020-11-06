@@ -1,0 +1,581 @@
+/* 
+  Title: YouTube Clone CSS
+  Author: Brittny Eaddy
+  Date: 11/5/20
+  Purpose: To clone YouTube home page to practice responsive design, media queries,
+    and Bootstrap grid.
+*/
+
+/* Body Styles */
+body {
+  background-color: rgba(242, 242, 242, 0.3);
+  max-width: 100%;
+}
+
+body, h6 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.875em;
+}
+
+/* Element Styles */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Div Styles */
+div {
+  display: inline-block;
+}
+
+/* Paragraph Styles */
+p {
+  display: inline-block;
+  margin: 0.3125em;
+}
+
+/* Heading Styles */
+h5 {
+  font-weight: normal;
+  margin-top: 0.3125em;
+}
+
+/* Link Styles */
+.a {
+  margin-left: 0.625em;
+}
+
+a, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Bolds titles of upcoming videos */
+.col-lg-4 a {
+  font-weight: bold;
+}
+
+/* Header Styles */
+header {
+  background-color: white;
+  height: 3.4375em;
+  margin-bottom: 0.625em;
+}
+
+/* Right Header Styles */
+header>.right {
+  float: right;
+  margin-top: 0.625em;
+}
+
+/* Header Icon Styles */
+#grid, #cam, #ellipsis, #magnifyer {
+  color: gray!important;  
+  margin-right: 0.03125em;
+}
+
+#grid {
+  margin-bottom: 0.0625em;
+  opacity: 0.5;
+}
+
+/* Hides magnifyer icon on larger screens */
+#magnifyer {
+  display: none;
+}
+
+/* Left Header Styles */
+.left {
+  margin-top: -1.625em;
+}
+
+/* Blends youtube image background into body */
+header>a>img {
+  mix-blend-mode: multiply;
+}
+
+/* Hides mobile youtube logo on larger screens */
+#logo-black {
+  display: none;
+}
+
+/* Searcbar Styles */
+.form-control-feedback::placeholder {
+  font-size: 0.9375em;
+  padding-left: 0.3125em;
+}
+
+.form-inline {
+  max-width: 50%;
+}
+
+/* Makes search icon same width as searchbar */
+#basic-addon {
+  height: 2em;
+}
+
+.form-control {
+  border: 1px solid lightgray;
+  border-radius: 0.3125em;
+  display: inline;
+  height: 2em;
+  margin-left: 10.9375em;
+}
+
+/* Main Video Styles */
+#main {
+  max-width: 100%;
+}
+
+.col-lg-7 {
+  margin-left: 2.5em;
+  margin-right: 0.625em;
+}
+
+/* Video Description Styles */
+.description {
+  margin-left: 3.4375em;
+}
+
+.poster, .mainviews {
+  float: left;
+  margin: 0px!important;
+}
+
+.mainviews {
+  color: gray;
+}
+
+.col-lg-12 {
+  padding: 0;
+}
+
+/* Resizes subscribe button */
+#subscribe {
+  float: right;
+  font-size: 14px;
+  height: 2.1875em;
+}
+
+ #showmore {
+   position: fixed;
+}
+
+/* Like/Dislike Styles */
+.right1 {
+  float: right;
+  margin-top: -2.1875em;
+}
+
+.right1 a:link {
+  color: #737373;
+  font-weight: normal;
+}
+
+/* Thumb Icon Styles */
+.thumbs {
+  border-bottom: 0.125em solid gray;
+  padding-bottom: 0.625em;
+}
+
+#save {
+  color: gray;
+  margin-left: 0.625em;
+}
+
+/* Spaces icons out */
+.right1 .fa-thumbs-up, .right1 .fa-thumbs-down, .fa-share, .right1>img {
+  margin-right: 0.25em!important;
+}
+
+.right1 img, .fa-share, .right1 .fa-thumbs-down, .fa-ellipsis-h {
+  margin-left: 0.75em;
+}
+
+/* Pushes icon to bottom of container */
+.fa-ellipsis-h {
+  opacity: 0.5;
+  vertical-align: sub;
+  width: 0.625em;
+}
+
+/* WWYD Video/Logo Styles */
+#wwyd {
+  border-radius: 50%;
+  margin-bottom: 1.5625em;
+}
+
+/* User Action Styles */
+.showmore, .showmore:hover, .sortby, .reply, .reply:hover {
+  color: gray;
+  font-weight: normal;
+  margin-left: 0.3125em;
+  text-transform: uppercase;
+}
+
+/* User Circle Styles */
+#user {
+  border-radius: 50%;
+}
+
+/* Formats Harry Potter profile pictures */
+.HPuser {
+  border-radius: 50%;
+  margin-left: 0.9375em;
+  margin-top: 0.9375em;
+  height: 2.5em;
+  width: 2.5em;
+  object-fit: cover;
+}
+
+/* User Name Styles */
+.name {
+  padding-left: 0.9375em;
+  padding-top: 0.9375em;
+}
+
+.name>strong {
+  margin-left: 0.4px;
+}
+
+.name>small {
+  color:gray; 
+  margin-left: 0.3125em;
+}
+
+/* User Comment Styles */
+.lorem, .reaction {
+  margin-bottom: 0.625em;
+  margin-left: 4.375em;
+  margin-top: -0.9375em;
+}
+
+/* Comment Styles */
+.new {
+  margin: 0;
+}
+
+/* Formats comment text box */
+#comment {
+  background-color: inherit;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid lightgray;
+  height: 20%; 
+  margin-left: 0.9375em;
+  width: 93%;
+}
+
+/* Styles placeholder font */
+#comment::placeholder {
+  font-family: Roboto, Arial, san-serif;
+  font-size: 1em;
+}
+
+/* Reaction Styles */
+.reaction {
+  color: gray;
+}
+
+/* Makes thumb icons darker on hover */
+.reaction>i, .reaction p {
+  color: darkgray;
+}
+
+.reaction>i:hover {
+  color: gray;
+}
+
+/*View Reply Styles */
+.row>.view>i, .row>.view>a, .view {
+  color: #1a8cff;
+  font-weight: normal;
+}
+
+.row>.view {
+  display: block;
+  margin-left: -9.5em;
+  margin-top: 0.9375em;
+}
+
+.row>.view>a {
+  margin-left: 0.8125em;
+}
+
+/* Adjusts positioning of first two rows */
+#first {
+  margin-bottom: -10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 5px;
+}
+
+#first {
+  float: left;
+}
+
+#first, #second {
+  margin-left: 0.08125em;
+}
+
+#second {
+  float: left;
+  width: 100%
+  margin-top: 0.9375em;
+}
+
+/* Up Next Styles */
+.row iframe, .row>.col-lg-6 {
+  margin-bottom: 15px;
+}
+
+/* Adds padding to upcoming videos */
+.col-lg-6 {
+  max-width: 50%!important;
+  position: relative;
+}
+
+.col-lg-6 iframe {
+  margin-bottom: 0.3125em;
+  padding-right: 0.3125em;
+}
+
+.video>div:first-child {
+  width: 30%!important;
+}
+
+.row>.col-lg-6 {
+  vertical-align: top;
+}
+
+.row>.col-lg-6, #first {
+  width: 100%;
+}
+
+.row .col-lg-6 {
+  padding: 0px;
+  margin: 0;
+}
+
+.col-lg-4 {
+  margin-left: 0px;
+}
+
+.col-lg-4>.row {
+  margin-left: 0.0625em;  
+}
+
+#next {
+  margin-left: 0.9375em;
+  font-size: 1em;
+  float: left;
+  clear: left;
+}
+
+.col-lg-4 .row .fa-ellipsis-v {
+  display: none!important;
+}
+
+/* Autoplay Styles */
+#autoplay {
+  font-weight: bold;
+  float: right;
+  clear: right;
+  text-transform: uppercase;
+}
+
+/* Show More Button For Smaller Screens */
+#more {
+  display: none;
+  max-width: 100%;
+}
+
+/* Responsive Web Design Styles */
+/* For small laptops/tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .col-lg-7 {
+      margin-left: 0;
+    }
+    
+    /* Main Video Styles */
+    #main {
+      width: 100%;
+    }
+    
+    .usercomments {
+      display: none;
+    }
+    
+    .stats {
+      margin-left: 202px!important;
+      position: absolute;
+    }
+    
+    #searchbar {
+      margin-left: -5.9375em;
+    }
+    
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .col-lg-7, .col-lg-4, .col-lg-6 {
+      margin-left: 0px;
+    }
+    
+    .right1 {
+      font-size: 12px;
+    }
+    
+    /* Main Video Styles */
+    #main {
+      max-height: 50%;
+    }
+    
+    .usercomments {
+      display: none;
+    }
+    
+    .col-lg-4 {
+      margin-top: -45px;
+    }
+    
+    .stats {
+      margin-left: 200px!important;
+      position: absolute;
+       
+    }
+    
+    #searchbar, .form-inline, .form-group, .input-group-append {
+      display: none!important;
+    }
+    
+    #magnifyer {
+      display: inline;
+    }
+    
+    #more {
+      display: block;
+    }
+   
+}
+
+/* Media queries for max browser width of 600px */
+@media screen and (max-width: 600px) {
+    /* Header Styles */
+    #navicon, #logo {
+      margin-left: -5px!important;
+    }
+    
+    #searchbar, .form-inline, .form-group, .input-group-append {
+      display: none!important;
+    }
+    
+    .col-lg-7 {
+      margin-left: 0px;
+    }
+    
+    /* Main Video Styles */
+    #main {
+      height: 50%;
+    }
+    
+    .right1 {
+       font-size: 0.75em;   
+    }
+    
+    /* Removes user comments, date, and searchbar */
+    .usercomments, #date, #searchbar {
+      display: none;
+    }
+    
+    #magnifyer {
+      display: inline;
+    }
+    
+    .col-lg-4 {
+      margin-top: 5em;
+    }
+    
+     #more {
+      display: block!important;
+      width: 100%;
+    }
+}
+
+/* Media query for phones */
+@media screen and (max-device-width: 600px) {
+    body, .col-lg-7, .col-lg-4 {
+      margin-left: 10px;
+      padding: 0;
+    }
+    
+    /* Header Styles */
+    header {
+      background-color: black;
+      height: 50px;
+    }
+    
+      #logo-black {
+      display: inline;
+      float: left;
+      margin-left: -50px;
+      margin-top: -25px;
+    }
+    
+    /* Main Video Styles */
+    #main {
+      width: 100%!important;
+      margin: 0!important;
+    }
+    
+    h5 {
+      font-size: 18px;
+    }
+    
+    .right1, .react {
+      border-bottom: 1px solid lightgray;
+    }
+    
+    .poster {
+      margin-top: 15px;
+    }
+    
+    #subscribe {
+      background-color: white;
+      color: red;
+      border: none;
+    }
+    
+    .description {
+      display: none;
+    }
+    
+    .right1, #grid, #cam, #logo  {
+      display: none;
+    }
+    
+    /* Up Next Styles */
+    .col-lg-4 {
+      margin-top: 15px;
+    }
+    
+    .col-lg-6, .col-lg-4 {
+      width: 100%;
+    }
+}
+
+/* Meda query for landscape orientation on phones */ {
+@media screen and (max-device-width: 600px) and (orientation: landscape) {
+  #logo {
+    display: none;
+  }
+    
+  #logo-black {
+    display: inline;
+  }
+        
+  .stats {
+    margin: -10px;
+  }        
+}

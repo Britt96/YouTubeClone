@@ -1,0 +1,516 @@
+<!--
+  Title: YouTube Clone
+  Author: Brittny Eaddy
+  Date: 11/5/20
+  Purpose: To clone YouTube home page to practice responsive design, media queries,
+    and Bootstrap grid.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>Mother can't afford to give her son a promised toy reward | What Would You Do</title>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+    <!--CSS-->
+    <link rel="stylesheet" href="youtube.css">
+      
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" 
+    rel="stylesheet">
+    
+  </head>
+  <body>
+    <header class="container-fluid">
+      <!--YouTube Logo-->
+      <div class="left">
+        <a href="#"><i class="fa fa-navicon fa-lg ml-4 mr-4 mb-3" id="navicon"></i></a>
+        <a href="#"><img src="youtube.png" alt="YouTube Logo" style="width:100px;height:100px;" id="logo"></a>
+        <a href="#"><img src="youtubeblack.jpeg" alt="YouTube Mobile" style="width:150px;height:100px;" 
+        id="logo-black"></a>  
+      </div>
+      
+     <!--Searchbar-->
+     <span class="form-inline d-inline-flex input-group form-2 pl-0" id="searchbar">
+       <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+       <span class="input-group-append">
+         <span class="input-group-text pl-4 pr-4" id="basic-addon"><i class="fa fa-search text-grey" 
+         aria-hidden="true" title="Search"></i></span>
+      </span>
+     </span>
+  
+     <span class="right">
+       <i class="fa fa-search fa-lg mr-4" id="magnifyer"></i>
+        <i class="fa fa-video-camera fa-lg mr-4" id="cam"></i>
+        <img src="grid_button.png" alt="Grid" style="width:25px;height:25px;" id="grid">
+        <i class="fa fa-ellipsis-v fa-lg ml-4 mr-4" id="ellipsis"></i>
+        <button type="button" class="btn btn-outline-primary mr-3" id="signin">
+        <i class="fa fa-user-circle fa-lg"></i> SIGN IN</button>
+     </span>
+   </header>  
+
+   <!--Current Video-->
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-lg-7">
+         <iframe width="792px" height="402px" src="https://www.youtube.com/embed/32jBWpwb-SI" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         id="main" allowfullscreen></iframe>
+         <br>
+         <h5>Mother can't afford to give her son a promised 
+         toy reward | What Would You Do</h5>
+      
+    <!--Main Viedo Info-->
+     <div class="col-lg-12 react">
+       <div>
+         <span class="mainviews">
+         27,841,906 views<span id="date"> ⋅ Aug 12, 2017</span>
+         </span>
+       </div>
+     </div>
+        
+     <!--Main Video Actions-->
+     <span class="right1">
+       <span class="thumbs">
+         <a href="#"><i class="fa fa-thumbs-up fa-lg" title="I like this">
+         </i><p>328K</p></a>
+         <a href="#"><i class="fa fa-thumbs-down fa-lg" title="I like this"></i><p>7.9K</p></a>
+       </span>
+       <span>
+          <a href="#"><i class="fa fa-share fa-lg" id="share"></i>SHARE</a>
+          <img src="saveicon.png" alt="Save" style="height:15px;width:20px;">
+          <a href="#" id="save">SAVE</a>
+          <i class="fa fa-ellipsis-h fa-lg"></i> 
+          </span>
+      </span>
+    
+      <!--Poster Info-->
+      <div class="col-lg-12"> 
+        <img src="wwydlogo.png" alt="WWYD label" style="height:50px; weight:50px;" id="wwyd">
+        <div class="a"><strong>What Would You Do?</strong><br>
+        <small>5.32M subscribers</small>
+        </div>
+          
+        <!--Subscribe Button-->  
+        <button type="button" class="btn btn-danger" id="subscribe">SUBSCRIBE</button>          
+      </div>
+    
+      <!--Video Description-->
+      <div class="description">
+        <p>
+          While in a toy store, a mother can't afford to buy her child the gift she promised 
+          him as a reward for getting good grades
+        </p>
+        <div><a href="#" class="showmore">Show More</a></div>    
+      </div>
+           
+      <hr>
+           
+      <!--User Comments-->
+      <div class="usercomments">
+        <div>
+          <p>36,307 Comments<p>
+          <img src="sorticon.jpeg" alt="Sort Icon" id="sort" style="mix-blend-mode:multiply;">
+          <p class="sortby">Sort By</p>
+        </div>
+        
+      <!--New Comment-->
+      <div class="row new">
+        <img src="youtubeprofileicon.png" alt="Profile Icon" id="user" style="height:40px;width:40px;">
+        <input type="text" placeholder="Add a public comment..." id="comment">     
+      </div>
+      
+      <!--Harry Comment-->
+      <div class="row">
+        <!--User Icon-->
+        <img src="harrypotter.jpeg" alt="Profile Icon" class="HPuser">
+        <span class="name">
+          <strong>Harry Potter</strong><small>5 hours ago</small>
+        </span>
+        <p class="lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl quam, tempor sit amet libero quis, 
+          posuere pellentesque felis. Ut suscipit ut justo aliquet hendrerit. Pellentesque quis lacinia leo. Sed 
+          tincidunt, nibh in varius elementum, justo ex varius odio, id dapibus nulla lacus sit amet risus. 
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sed ex ut 
+          nisl suscipit vehicula.
+        </p>
+        <div class="reaction">
+          <i class="fa fa-thumbs-up fa-lg" title="I like this"></i><p>10</p>
+          <i class="fa fa-thumbs-down fa-lg" title="I like this"></i><p>10</p>
+          <a href="#" class="reply">Reply</a>
+        </div>
+        <div class="view">
+          <i class="fa fa-caret-down"></i><a href="#">View 2 replies</a>
+        </div>
+      </div>
+        
+      <!--Hermione Granger Comment-->    
+      <div class="row">
+        <img src="hermionegranger.jpeg" alt="Profile Icon" class="HPuser">
+          <span class="name">
+            <strong>Hermione Granger</strong><small>5 hours ago</small>
+          </span>
+          <p class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl quam, tempor sit amet libero quis, 
+            posuere pellentesque felis. Ut suscipit ut justo aliquet hendrerit. Pellentesque quis lacinia leo. Sed 
+            tincidunt, nibh in varius elementum, justo ex varius odio, id dapibus nulla lacus sit amet risus. 
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sed ex ut
+            nisl suscipit vehicula.
+          </p>
+          <div class="reaction">
+            <i class="fa fa-thumbs-up fa-lg" title="I like this"></i><p>10</p>
+            <i class="fa fa-thumbs-down fa-lg" title="I like this"></i><p>10</p>
+            <a href="#" class="reply">Reply</a>
+          </div>
+          <div class="view">
+            <i class="fa fa-caret-down"></i><a href="#">View 2 replies</a>
+          </div>
+      </div>
+        
+      <!--Ronald Weasley Comment-->    
+      <div class="row">
+        <img src="ronaldweasley.jpeg" alt="Profile Icon" class="HPuser">
+        <span class="name">
+          <strong>Ronald Weasley</strong><small>5 hours ago</small>
+        </span>
+        <p class="lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl quam, tempor sit amet libero quis, 
+          posuere pellentesque felis. Ut suscipit ut justo aliquet hendrerit. Pellentesque quis lacinia leo. Sed 
+          tincidunt, nibh in varius elementum, justo ex varius odio, id dapibus nulla lacus sit amet risus. 
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sed ex ut
+          nisl suscipit vehicula.
+        </p>
+        <div class="reaction">
+          <i class="fa fa-thumbs-up fa-lg" title="I like this"></i><p>10</p>
+          <i class="fa fa-thumbs-down fa-lg" title="I like this"></i><p>10</p>
+          <a href="#" class="reply">Reply</a>
+        </div>
+        <div class="view">
+          <i class="fa fa-caret-down"></i><a href="#">View 2 replies</a>
+        </div>
+      </div>
+    
+      <!--Neville Longbottom Comment-->
+      <div class="row">
+        <img src="nevillelongbottom.jpeg" alt="Profile Icon" class="HPuser">
+        <span class="name">
+          <strong>Neville Longbottom</strong><small>5 hours ago</small>
+        </span> 
+        <p class="lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl quam, tempor sit amet libero quis, 
+          posuere pellentesque felis. Ut suscipit ut justo aliquet hendrerit. Pellentesque quis lacinia leo. 
+          Sed tincidunt, nibh in varius elementum, justo ex varius odio, id dapibus nulla lacus sit amet risus. 
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sed ex ut 
+          nisl suscipit vehicula.
+        </p>
+        <div class="reaction">
+          <i class="fa fa-thumbs-up fa-lg" title="I like this"></i><p>10</p>
+          <i class="fa fa-thumbs-down fa-lg" title="I like this"></i><p>10</p>
+          <a href="#" class="reply">Reply</a>
+        </div>
+        <div class="view">
+          <i class="fa fa-caret-down"></i><a href="#">View 2 replies</a>
+        </div>
+      </div>
+        
+      <!--Draco Malfoy-->    
+      <div class="row">
+        <img src="dracomalfoy.jpeg" alt="Profile Icon" class="HPuser">
+        <span class="name">
+          <strong>Draco Malfoy</strong><small>5 hours ago</small>
+        </span>
+        <p class="lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl quam, tempor sit amet libero quis, 
+          posuere pellentesque felis. Ut suscipit ut justo aliquet hendrerit. Pellentesque quis lacinia leo. Sed 
+          tincidunt, nibh in varius elementum, justo ex varius odio, id dapibus nulla lacus sit amet risus. 
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sed ex ut
+          nisl suscipit vehicula.
+        </p>
+        <div class="reaction">
+          <i class="fa fa-thumbs-up fa-lg" title="I like this"></i><p>10</p>
+          <i class="fa fa-thumbs-down fa-lg" title="I like this"></i><p>10</p>
+          <a href="#" class="reply">Reply</a>
+        </div>
+        <div class="view">
+          <i class="fa fa-caret-down"></i><a href="#">View 2 replies</a>
+        </div>
+      </div>   
+    </div>
+  </div>
+       
+  <!--Up Next-->
+  <div class="col-lg-4">
+    <h4 id="next">Up next</h4>
+    <p id="autoplay">Autoplay<i class="fa fa-toggle-off fa-lg ml-2"></i></p>
+      
+    <!--First Video-->
+    <div class="row video" id="first">
+      <div class="col-lg-6">
+        <iframe width="200px" height="100px" src="https://www.youtube.com/embed/ngpp0z2mb8w" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-6 stats">
+        <a href="#" title="Mother can only afford one meal to share with her family | WWYD">Mother can 
+        only afford one meal to share with her family |...</a><br>
+        <small>
+          What Would You Do?<br>
+          35M views ⋅ 1 year ago    
+        </small>
+       </div>
+     </div>
+       
+     <!--Second Video-->
+     <div class="row video" id="second">
+       <div class="col-lg-6">
+         <iframe width="200px" height="100px" src="https://www.youtube.com/embed/ypyaA7xtblQ" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen></iframe>  
+       </div>
+       <div class="col-lg-6 stats">
+         <a href="#" title="Mom argues with child over gender appropriate toys |...">Mom argues with child over gender appropriate toys | What 
+         Would You Do" </a><br>
+         <small>
+           What Would You Do<br>
+           12M views ⋅ 3 years ago
+         </small>
+       </div>
+     </div>
+       
+     <!--Third Video-->
+     <div class="row video">
+       <div class="col-lg-6">
+         <iframe width="200px" height="100px" src="https://www.youtube.com/embed/HcSdJ_QxksQ" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+       </div>
+       <div class="col-lg-6 stats">
+         <a href="#" title="Abdul is the Ultimate Haggler | Extreme Cheakskates">Abdul is the Ultimate 
+         Haggler | Extreme Cheakskates</a><br>
+          <small>
+            TLC<br>
+            403K views ⋅ 1 month ago
+          </small>
+        </div>
+     </div>
+     
+    <!--Fourth Video-->
+    <div class="row video">
+      <div class="col-lg-6">
+        <iframe width="200px" height="100px" src="https://www.youtube.com/embed/psD-Jr23N0I" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>  
+      </div>
+      <div class="col-lg-6 stats">
+        <a href="#" title="Have You Seen My Dad (Social Experiment)">Have You Seen My Dad (Social 
+        Experiment)</a><br>
+        <small>
+          Pranks Network<br>
+          8.9M views ⋅ 3 years ago
+        </small>
+      </div>
+    </div>
+          
+    <!--Fifth Video-->
+    <div class="row video">
+      <div class="col-lg-6">
+        <iframe width="200px" height="100px" src="https://www.youtube.com/embed/Qs_sbBxYHCE" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe> 
+      </div>  
+      <div class="col-lg-6 stats" style="vertical-align:top;">
+        <a href="#" title="Man pays for stranger's groceries">Man pays for stranger's groceries</a><br>
+        <small>
+          jesuspainter<br>
+          8.1M views ⋅ 5 years ago
+        </small>
+      </div>
+    </div>
+          
+    <!--Sixth Video-->
+    <div class="row video">
+      <div class="col-lg-6">
+        <iframe width="200px" height="100px" src="https://www.youtube.com/embed/10AUpv1PtiI" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>  
+      </div>
+      <div class="col-lg-6 stats">
+        <a href="#" title="Jealous Sister Takes Over the Bridal Appointment | Say Yes to the Dress">
+        Jealous Sister Takes Over the Bridal Appointment | Say Yes...</a><br>
+        <small>
+          Say Yes to the Dress<br>
+          12M views ⋅ 1 year ago
+        </small>
+        </div>
+      </div>
+      
+      <!--Seventh Video-->
+      <div class="row video">
+        <div class="col-lg-6">
+          <iframe width="200px" height="100px" src="https://www.youtube.com/embed/55WC5G9mj0Y" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe> 
+        </div>
+        <div class="col-lg-6 stats">
+          <a href="#" title="Homeless Mom Collects Cans For Cash, Stranger Changes Her Life Forever | Dhar Mann">
+          Homeless Mom Collects Cans For Cash, Stranger Changes H...</a><br>
+          <small>
+            Dhar Mann<br>
+            6.8M views ⋅ 2 months ago
+          </small>
+        </div>
+      </div>
+
+      <!--Eight Video-->
+      <div class="row video">
+        <div class="col-lg-6">
+          <iframe width="200px" height="100px" src="https://www.youtube.com/embed/JbdpGvenBvk" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>  
+        </div>         
+        <div class="col-lg-6 stats">
+          <a href="#" title="Meet the Coupon Kid! | Extreme Couponing (Full Episode)">"Meet the Coupon Kid! | Extreme Couponing (Full Episode)"</a><br>
+          <small>
+            TLC<br>
+            3.3M views ⋅ 11 months ago
+          </small>
+        </div>
+      </div>
+          
+      <!--Ninth Video-->
+      <div class="row video">
+        <div class="col-lg-6">
+          <iframe width="200px" height="100px" src="https://www.youtube.com/embed/BB_LqWFTq9Q" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>  
+        </div>
+        <div class="col-lg-6 stats">
+          <a href="#" title="Overweight woman body-shamed, charged extra during procedure | What Would You Do | WWYD">
+          Overweight woman body-shamed, charged extra during...</a><br>
+          <small>
+            What Would You Do?<br>
+            19M views ⋅ 1 year ago
+          </small>
+          </div>
+        </div>
+          
+        <!--Tenth Video-->
+        <div class="row video">
+          <div class="col-lg-6">
+            <iframe width="200px" height="100px" src="https://www.youtube.com/embed/yzO-D1VP2Eo" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6 stats">
+            <a href="#" title="Racially Appropriate Toys | What Would You Do? | WWYD | ABC News">Racially 
+            Appropriate Toys | What Would You Do? | WWYD | ABC...</a><br>
+            <small>
+              ABC News<br>
+              10M views ⋅ 5 years ago
+            </small>
+          </div>
+        </div>
+          
+        <!--Eleventh Video-->
+        <div class="row video">
+          <div class="col-lg-6">
+            <iframe width="200px" height="100px" src="https://www.youtube.com/embed/sfCUQQyeUaE" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>  
+          </div>
+          <div class="col-lg-6 stats">
+            <a href="#" title="Young boy asks for manicure at the nail salon | What Would You Do? | WWYD">
+            Young boy asks for manicure at the nail salon | What Would Yo...</a><br>
+            <small>
+              What Would You Do?<br>
+              9.1M views ⋅ 1 year ago
+            </small>
+          </div>
+        </div>
+          
+        <!--Twelfth Video-->
+        <div class="row video">
+          <div class="col-lg-6">
+            <iframe width="200px" height="100px" src="https://www.youtube.com/embed/BwK1bUCnoR8" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>  
+          </div>
+          <div class="col-lg-6 stats" style="vertical-align:top;">
+            <a href="#" title="Embarassing moments caught on live tv" style="text-transform:uppercase;">
+            Embarassing moments caught on live tv</a><br>
+            <small>
+              Hooked<br>
+              10M views ⋅ 5 months ago
+            </small>
+          </div>
+        </div>
+          
+        <!--Thirtheenth Video-->
+        <div class="row video">
+          <div class="col-lg-6">
+            <iframe width="200px" height="100px" src="https://www.youtube.com/embed/MLnhShanZbo" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>  
+          </div>
+          <div class="col-lg-6 stats" style="vertical-align:top;">
+            <a href="#" title="Top 5 Genius Monkeys Caught on Camera">Top 5 Genius Monkeys Caught on Camera</a><br>
+            <small>
+              Top Fives<br>
+              4.7M views ⋅ 2 years ago
+            </small>
+          </div>
+        </div>
+          
+        <!--Fourteenth Video-->
+        <div class="row video">
+          <div class="col-lg-6">
+            <iframe width="200px" height="100px" src="https://www.youtube.com/embed/cgib0bCzUpg" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>  
+          </div>
+          <div class="col-lg-6 stats" style="vertical-align:top;">
+            <a href="#" title="America's Got Talent 2018 - Funniest/ Weirdest / Worst Auditions - Part 1">
+            America's Got Talent 2018 - Funniest/ Weirdest / Worst...</a><br>
+            <small>
+              Amazing Auditions<br>
+              52M views ⋅ 2 years ago
+            </small>
+          </div>
+        </div>
+          
+        <!--Fifteenth Video-->
+        <div class="row video">
+          <div class="col-lg-6">
+            <iframe width="200px" height="100px" src="https://www.youtube.com/embed/JdDYqHBvf9w" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>  
+          </div>
+          <div class="col-lg-6 stats" style="vertical-align:top;">
+            <a href="#" title="Behind the voices - Celebrities Collection" style="text-transform:uppercase;">
+            Behind the voices - Celebrities Collection</a><br>
+            <small>
+              Who is there?<br>
+              13M views ⋅ 3 months ago
+            </small>
+            </div>  
+          </div>
+      
+          <!--Show More Button-->
+          <div class="row">
+            <div class="col-lg-12">
+              <button type="button" class="btn btn-outline-primary btn-sm btn-block" id="more">SHOW MORE</button> 
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
